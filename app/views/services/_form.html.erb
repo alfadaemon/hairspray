@@ -16,8 +16,8 @@
     <%= f.text_field :description %>
   </div>
   <div class="field">
-    <%= f.label :category %><br />
-    <%= f.text_field :category %>
+    <%= f.label :category %><br />	
+	<%= collection_select "service", "category_id", @category, "id", "name", {:include_blank => true} %>
   </div>
   <div class="actions">
     <%= f.submit %>

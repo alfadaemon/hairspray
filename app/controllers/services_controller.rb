@@ -25,6 +25,7 @@ class ServicesController < ApplicationController
   # GET /services/new.json
   def new
     @service = Service.new
+	@category = Category.find(:all, :order=>"name")
 
     respond_to do |format|
       format.html # new.html.erb
