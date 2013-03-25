@@ -36,6 +36,7 @@ class ServicesController < ApplicationController
   # GET /services/1/edit
   def edit
     @service = Service.find(params[:id])
+	@category = Category.find(:all, :order=>"name")
   end
 
   # POST /services
