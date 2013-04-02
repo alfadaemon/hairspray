@@ -15,6 +15,7 @@
 /log/*.log
 /tmp
 # Ignore database configuration files.
+.project
 /config/database.yml
 =======
 *.rbc

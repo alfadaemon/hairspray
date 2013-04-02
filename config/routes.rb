@@ -1,4 +1,10 @@
 Hairspray::Application.routes.draw do
+  resources :business_employees
+
+
+  resources :employees
+
+
   resources :services
 
 
